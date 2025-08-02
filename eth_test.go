@@ -17,7 +17,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/sha3"
 
-	"gitlab.com/nunet/device-management-service/lib/crypto"
+	"github.com/depinkit/crypto"
 )
 
 func generateEthKeyPair(t *testing.T) (*secp256k1.PrivateKey, *secp256k1.PublicKey, error) {

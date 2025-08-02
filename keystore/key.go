@@ -21,7 +21,7 @@ import (
 	libp2p_crypto "github.com/libp2p/go-libp2p/core/crypto"
 	"golang.org/x/crypto/scrypt"
 
-	"gitlab.com/nunet/device-management-service/lib/crypto"
+	"github.com/depinkit/crypto"
 )
 
 var (

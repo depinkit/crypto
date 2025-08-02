@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/nunet/device-management-service/lib/crypto"
+	"github.com/depinkit/crypto"
 )
 
 func generateRandomID(t *testing.T) crypto.ID {

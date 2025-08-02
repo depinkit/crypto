@@ -16,8 +16,6 @@ import (
 	"sync"
 
 	"github.com/spf13/afero"
-
-	"gitlab.com/nunet/device-management-service/utils"
 )
 
 // KeyStore manages a local keystore with lock and unlock functionalities.
@@ -71,7 +69,7 @@ func (ks *BasicKeyStore) Save(id string, data []byte, passphrase string) (string
 		return "", fmt.Errorf("failed to marshal key: %w", err)
 	}
 
-	filename, err := utils.WriteToFile(ks.fs, keyDataJSON, filepath.Join(ks.keysDir, key.ID+".json"))
+	filename, err := WriteToFile(ks.fs, keyDataJSON, filepath.Join(ks.keysDir, key.ID+".json"))
 	if err != nil {
 		return "", fmt.Errorf("failed to write key to file: %w", err)
 	}
